@@ -6,40 +6,35 @@
 </head>
 <body>
  
-<form action="https://formspree.io/rgavlo@yahoo.com"
+<form action="https://formspree.io/your@email.com"
       method="POST">
-  Imię:<br>
-  <input type="text" name="firstname" value="">
+  <label for="firstname">Imię:</label><br>
+  <input type="text" id="firstname" name="firstname">
   <br>
-  Nazwisko:<br>
-  <input type="text" name="lastname" value="">
+  <label for="lastname">Nazwisko:</label><br>
+  <input type="text" id="lastname" name="lastname">
   <br>
-  Mail:<br>
-  <input type="email" name="email" value="">
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email">
   <br>
-  Wybór miasta:<br>
-  <select name="city">
+  <label for="city">Miasto:</label><br />
+  <select name="city" id="city" name="city">
 <option value="Krakow">Krakow</option>
 <option value="Warszawa">Warszawa</option>
 <option value="Gdansk">Gdansk</option>
-  
   </select><br>
   <form>
-  Płeć:<br>
-  <input type="radio" name="gender" value="Mężczyzna" checked> Mężczyzna<br>
-  <input type="radio" name="gender" value="Kobieta"> Kobieta<br>
+  <label for="gender">Płeć:</label><br />
+  <input type="radio" name="gender" value="gender" checked> Mężczyzna<br>
+  <input type="radio" name="gender" value="gender"> Kobieta<br>
   </form>
   <form>
-  Zgoda na dane osobowe:<br>
-  <input type="checkbox" name="confirm" value=""> Zgadzam się
+  <label for="checkbox">Zgoda na dane osobowe:</label><br />
+  <input type="checkbox" name="confirm" value="confirm"> Zgadzam się
 </form>
- Wiadomość:<br>
-  <textarea name="wiadomość" rows="5" cols="40">
-
-</textarea><br>
-  <input type="submit" value="Wyślij">
-  
-  
+ <label for="message">Wiadomość:</label><br />
+ <textarea name="wiadomość" rows="5" cols="40"></textarea><br>
+ <input type="submit" value="Send">
 </form>   
 </body>
 </html>
